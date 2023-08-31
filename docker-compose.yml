@@ -7,7 +7,6 @@ services:
     environment:
       - xpack.security.enabled=false  
       - discovery.type=single-node
-      - ES_JAVA_OPTS=-Xms512m -Xmx512m
     ulimits:
       memlock:
         soft: -1
@@ -32,7 +31,7 @@ services:
     ports:
       - "5601:5601"
     environment:
-      - ELASTICSEARCH_HOSTS=${ELASTICSEARCH_HOSTS}
+      - ELASTICSEARCH_HOSTS=${ES_HOSTS}  
     depends_on:
       - elasticsearch
     networks:
@@ -48,7 +47,7 @@ services:
         target: /usr/share/logstash/pipeline
         read_only: true
     environment:
-      - "ES_HOSTS=${ELASTICSEARCH_HOSTS}"
+      - "ES_HOSTS=${ES_HOSTS}"
       - "xpack.monitoring.enabled=false"
     ports:
       - "5000:5000"

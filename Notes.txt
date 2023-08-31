@@ -1,0 +1,3 @@
+replace /path/to/your/logs/ with the actual path to your log files. Adjust other settings as needed for your specific use case.
+
+Adjust paths in the volumes section to match your local file structure and ensure that the required Logstash configuration files are present in the specified directories.

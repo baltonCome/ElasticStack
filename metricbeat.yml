@@ -1,0 +1,14 @@
+metricbeat.modules:
+- module: system
+  metricsets:
+    - cpu
+    - memory
+    - network
+    - process
+  enabled: true
+  period: 10s
+  processes: ['.*']
+  cpu_ticks: false
+output.elasticsearch:
+  hosts: ["${ELASTICSEARCH_HOSTS}"]
+  index: "metricbeat-%{[agent.version]}-%{+yyyy.MM.dd}"

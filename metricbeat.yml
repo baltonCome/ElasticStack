@@ -10,5 +10,5 @@ metricbeat.modules:
   processes: ['.*']
   cpu_ticks: false
 output.elasticsearch:
-  hosts: ["${ELASTICSEARCH_HOSTS}"]
+  hosts: ["${ES_HOSTS}"]
   index: "metricbeat-%{[agent.version]}-%{+yyyy.MM.dd}"

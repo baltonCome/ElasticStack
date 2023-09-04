@@ -42,13 +42,13 @@ services:
     container_name: logstash
     restart: always
     volumes:
-      - type: bind
-        source: ./logstash_pipeline/
-        target: /usr/share/logstash/pipeline
-        read_only: true
+      - ./logstash_pipeline:/usr/share/logstash/pipeline
+      - ./logs:/usr/share/logstash/logs
     environment:
       - "ES_HOSTS=${ES_HOSTS}"
       - "xpack.monitoring.enabled=false"
+    depends_on:
+      - elasticsearch
     ports:
       - "5000:5000"
       - "9600:9600"

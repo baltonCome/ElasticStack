@@ -1,7 +1,7 @@
 [
     {
         "timestamp": 1692621164696,
-        "content": "2023-08-21 14:29:42,696 DefaultMessageListenerContainer-1 INFO com.asseco.pst.pcc.simoconn.services.socket.tcp.TcpConnection [DefaultMessageListenerContainer-1] dt.trace_sampled: true, dt.trace_id: 701642d7ffb5a3ddf7b1b6681b145b39, dt.span_id: 073ec220c5c0a7ef [71c34344-14b1-4ce1-9f86-9f63adc2ae42] Sending to Socket Hex [38 33 34 30 31 32 33 34 30 39 31 30 31 32 30 30 30 30 31 38 33 34 30 31 32 33 34 30 39 31 30 30 30 31 30 34 32 33 32 33 33 37 33 32 30 30 30 30 30 30 31 30 34 30 37 30 35 38 33 34 31 30 30 32 39 34 33 30 30 30 30 30 30 30 32 30 30 37 30 36 43 30 30 30 30 30 30 30 32 30 30 37 30 36 43 32 30 32 33 30 38 32 31 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 ].",
+        "content": "2023-08-21 14:29:42,696 DefaultMessageListenerContainer-1 INFO com.asseco.pst.pcc.simoconn.services.socket.tcp.TcpConnection [DefaultMessageListenerContainer-1] dt.trace_sampled: true, dt.trace_id: 701642d7ffb5a3ddf7b1b6681b145b39, dt.span_id: 073ec220c5c0a7ef [71c34344-14b1-4ce1-9f86-9f63adc2ae42] Sending to Socket Hex [38 33 34 30 31 32 33 34 30 39 31 30 31 32 30 30 30 30 31 38 33 34 30 31 32 33 34 30 39 31 30 30 30 31 30 34 32 33 32 33 33 37 33 32 30 30 30 30 30 30 31 30 34 30 37 30 35 38 33 34 31 30 30 32 39 34 33 30 30 30 30 30 30 30 32 30 30 37 30 36 43 30 30 30 30 30 30 30 32 30 30 37 30 36 43 32 30 32 33 30 38 32 31 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30] . ",
         "status": "INFO",
         "eventType": "LOG",
         "additionalColumns": {
@@ -11,7 +11,7 @@
             "dt.entity.process_group": [
                 "PROCESS_GROUP-A6DFCFDB704B5614"
             ],
-            "dt.source_entity": [
+            "dt.source_entity": [   
                 "PROCESS_GROUP_INSTANCE-CD2F7A1A30DB61CD"
             ],
             "process.technology": [

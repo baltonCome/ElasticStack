@@ -1,3 +1,5 @@
 replace /path/to/your/logs/ with the actual path to your log files. Adjust other settings as needed for your specific use case.
 
 Adjust paths in the volumes section to match your local file structure and ensure that the required Logstash configuration files are present in the specified directories.
+
+echo -n "Sample log entry" | python -c "import socket, sys; s=socket.socket(socket.AF_INET, socket.SOCK_STREAM); s.connect(('localhost', 5000)); s.send(sys.stdin.read().encode()); s.close()"
